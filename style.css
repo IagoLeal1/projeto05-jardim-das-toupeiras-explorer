@@ -1,0 +1,60 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url(./assets/fundo.svg) center;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+
+.jardim{
+  height: 100vh;
+  width: 80vw;
+  object-fit: cover;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+}
+
+.toupeiras-animation1:after{
+  content: url(./assets/toupeira6.svg);
+  animation: toupeiraup 2s;
+  animation-delay: 1s;
+}
+.toupeiras-animation2:after{
+  content: url(./assets/toupeira6.svg);
+  animation: toupeiraup 2s;
+  animation-delay: 4s;
+}
+.toupeiras-animation3:after{
+  content: url(./assets/toupeira6.svg);
+  animation: toupeiraup 2s;
+  animation-delay: 6s;
+}
+
+@keyframes toupeiraup{
+  0%{
+      content:url(./assets/toupeira6.svg);
+    }
+    20%{
+      content:url(./assets/toupeira1.svg);
+    }
+    40%{
+      content:url(./assets/toupeira2.svg);
+    }
+    60%{
+      content:url(./assets/toupeira3.svg);
+    }
+    80%{
+      content:url(./assets/toupeira4.svg);
+    }
+    100%{
+      content:url(./assets/toupeira5.svg);
+    }
+  }
+
